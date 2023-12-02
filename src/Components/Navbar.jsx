@@ -4,13 +4,13 @@ import {Nav, Navbar, Container} from 'react-bootstrap';
 const NetMoviesNavbar = () => {
   return (
     <>
-    <Navbar bg="dark" data-bs-theme="dark">
+    <Navbar bg="light" data-bs-theme="light">
       <Container>
-        <Navbar.Brand href="#home">NetMovies</Navbar.Brand>
+        <Navbar.Brand href="/">NetMovies</Navbar.Brand>
         <Nav className="me-auto">
-          <Nav.Link href="#home">Home</Nav.Link>
-          <Nav.Link href="#features">Movies</Nav.Link>
-          <Nav.Link href="#pricing">TvShows</Nav.Link>
+          <Nav.Link href="/">Home</Nav.Link>
+          <Nav.Link href="/Movies">Movies</Nav.Link>
+          <Nav.Link href="/TvShows">TvShows</Nav.Link>
         </Nav>
       </Container>
     </Navbar>  

@@ -1,11 +1,12 @@
-// import './App.css';
+import './App.css';
 import React from "react";
 import {Route, Routes} from 'react-router-dom'
 import Home from "./Components/Screens/Home";
 import Movies from "./Components/Screens/Movies";
 import TvShows from "./Components/Screens/TvShows";
 import About from "./Components/Screens/About";
-import Animations from "./Components/Screens/Animations"
+import Animations from "./Components/Screens/Animations";
+import Header from "./Components/Screens/Header";
 
 
 import NetMoviesNavbar from "./Components/Navbar";
@@ -15,12 +16,14 @@ function App(){
   return(
     <>
      <NetMoviesNavbar/>
+     <Header/>
+
     <Routes>
-      <Route path ='/' element ={<Home/>} />
-      <Route path ='/Movies' element = {<Movies/>} />
-      <Route path ='/TvShows' element = {<TvShows/>} />
-      <Route path ='/Animations' element = {<Animations/>} />
-      <Route path ='/About' element = {<About/>} />
+      <Route path ='/'  />
+      <Route path ='/Movies' />
+      <Route path ='/TvShows' />
+      <Route path ='/Animations' />
+      <Route path ='/About' />
 
     </Routes>
     </>

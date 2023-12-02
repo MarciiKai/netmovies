@@ -1,16 +1,28 @@
 .navbar{
-    /* background-color: rgb(212, 233, 226); */
-    align-items: flex-end;
+    display: flex;
+    justify-content:  space-around;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    z-index: 1;
+    background-color: transparent;
+    transition: 0.6s ease-in-out;
 }
+
 .navbar .brand{
     font-style: italic;
     font-weight: bold;
+    font-size: xx-large;
 
 }
 
 .navbar .ms-auto{
 color: #000;
-font-size: medium;
+font-weight: bold;
+font-size: large;
 font-style: bold;
 justify-content: space-around;
 }
@@ -19,8 +31,8 @@ justify-content: space-around;
     color: rgb(119, 199, 219);
 }
 
-.main{
-    background-image: url(./images/banner.jpg);
+#main{
+    background-image: url(./images/banner.jpg) ;    
     width: 100%;
     height: 700pX;
     position: relative ;

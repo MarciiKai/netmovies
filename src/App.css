@@ -16,15 +16,16 @@
     font-style: italic;
     font-weight: bold;
     font-size: xx-large;
+    color: white !important;
 
 }
 
 .navbar .ms-auto{
-color: #000;
 font-weight: bold;
 font-size: large;
 font-style: bold;
 justify-content: space-around;
+text-decoration: aliceblue;
 }
 
 .navbar .ms-auto :hover{
@@ -44,9 +45,10 @@ justify-content: space-around;
 #main::before {
     position: absolute;
     content: "";
-    background: -moz-radial-gradient(center, ellipse cover, rgba(182, 47, 47, 0.38) 0%, rgba(0, 0, 0, 0.8) 100%);
-    background: -webkit-radial-gradient(center, ellipse cover, rgba(207, 144, 144, 0.38) 100%, rgba(0, 0, 0, 0.8) 100%);
-    background: radial-gradient(ellipse at center, rgba(182, 47, 47, 0.38) 100%, rgba(0, 0, 0, 0.8) 100%);
+    background: rgb(98, 80, 22);
+    background: -moz-radial-gradient(center, ellipse cover, rgba(182, 47, 47, 1.0) 0%, (95, 42, 42, 0.6) 100%);
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(182, 47, 47, 1.0)0%,  (95, 42, 42, 0.6) 100%);
+    background: radial-gradient(ellipse at center, rgba(182, 47, 47, 0.6) 0%, rgba(95, 42, 42, 0.6) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#61b50808', endColorstr='#99000000', GradientType=1);
     top: 0;
     left: 0;

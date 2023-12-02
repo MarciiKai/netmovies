@@ -1,5 +1,5 @@
 .navbar{
-    background-color: rgb(212, 233, 226);
+    /* background-color: rgb(212, 233, 226); */
     align-items: flex-end;
 }
 .navbar .brand{
@@ -17,4 +17,27 @@ justify-content: space-around;
 
 .navbar .ms-auto :hover{
     color: rgb(119, 199, 219);
+}
+
+.main{
+    background-image: url(./images/banner.jpg);
+    width: 100%;
+    height: 700pX;
+    position: relative ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+}
+#main::before{
+    position: absolute;
+    content: "";
+    background: -moz-radial-gradient(center, ellipse cover, rgba(182, 47, 47, 0.38)0%, rgba(0, 0, 0, 0.6) 100%);
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(207, 144, 144, 0.38) 0%, rgba(0, 0, 0, 0.6) 100%);
+    background: radial-gradient(ellipse at center, rgba(182, 47, 47, 0.38) 0%, rgba(0, 0, 0, 0.6) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#61b50808', endColorstr='#99000000',GradientType=1 );
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }

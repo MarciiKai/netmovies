@@ -14,3 +14,7 @@ font-size: medium;
 font-style: bold;
 justify-content: space-around;
 }
+
+.navbar .ms-auto :hover{
+    color: rgb(119, 199, 219);
+}

@@ -25,11 +25,10 @@ font-weight: bold;
 font-size: large;
 font-style: bold;
 justify-content: space-around;
-text-decoration: aliceblue;
 }
 
 .navbar .ms-auto :hover{
-    color: rgb(119, 199, 219);
+    color: white !important;;
 }
 
 #main {
@@ -56,3 +55,48 @@ text-decoration: aliceblue;
     height: 100%;
     z-index: -1;
 }
+    
+.header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    top: 100px;
+    height: 100%;
+    padding: 50px; 
+    background-color: rgba(47, 83, 182, 0.7);
+    color: #fff; 
+  }
+  
+  .intro-text {
+    margin-top: 100px;
+    max-width: 600px; 
+  }
+  
+  .search-bar {
+    margin-top: 20px;
+  }
+  
+  .search-bar input {
+    padding: 10px;
+    width: 200px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .search-bar button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .search-bar button:hover {
+    background-color: #0056b3;
+  }

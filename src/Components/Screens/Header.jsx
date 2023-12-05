@@ -10,6 +10,7 @@ function Header() {
             NetMovies is among the best online streaming sites for free
           </div>
         </div>
+        
 
         <div className="search-bar">
           <input type="text" placeholder="Search..." />
@@ -18,7 +19,8 @@ function Header() {
         <div className="full-site">
           <button type="button" > View Full Site ...</button>
         </div>
-
+        </div>
+        <div className="footer-container">
         <div className="footer-text">
           <div className="footer-lead-in">
           Explore NetMovies, your premier destination for free online movies and TV series.
@@ -40,9 +42,7 @@ function Header() {
             <div className="last-text">
             Thank you for choosing NetMovies!
             </div>
-
-        </div>
-
+            </div>
       </div>
     </header>
   );

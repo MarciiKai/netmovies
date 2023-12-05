@@ -15,6 +15,11 @@ function Header() {
           <input type="text" placeholder="Search..." />
           <button type="button">Search</button>
         </div>
+
+        <div className="full-site">
+          <button type="button" > View Full Site ...</button>
+        </div>
+
       </div>
     </header>
   );

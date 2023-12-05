@@ -108,3 +108,17 @@ justify-content: space-around;
   .search-bar button:hover {
     background-color: #0056b3;
   }
+
+  .full-site{
+    margin-top: 40px;
+  }
+
+  .full-site button{
+    background-color: #a9cef5;
+    color: #ffffff;
+    width: 100%;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 30px;
+    padding: 10px 20px;
+  }

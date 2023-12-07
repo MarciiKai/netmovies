@@ -9,7 +9,7 @@ function ListGroup( ){
     <>
       <h1>Months</h1>
       {items.length === 0 && <p>List not found</p>}
-      {/* <ul className="list-group"> */}
+      <ul className="list-group">
      {items.map((item, index) =>
        <li className={selectedIndex === index ?
          "list-group-item active" : 

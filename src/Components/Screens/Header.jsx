@@ -27,14 +27,14 @@ function Header() {
           </div>
           <div className="footer-heading text-uppercase">Here's why NetMovies stands out:  </div>
             <div className="footer-list">
-            {/* <ul>
+            <ul>
               <li>Ad-free experience</li>
               <li>Free and high-speed streaming</li>
               <li>No account needed</li>
               <li>One-click streaming convenience</li>
               <li>Extensive library with over 400,000 videos</li>
             </ul>
-            </div> */}
+            </div>
 
             <div className="last-footer-text">
             If you're seeking a secure platform for online movie watching, give NetMovies a try. Enjoy our service? Bookmark and share with your friends.

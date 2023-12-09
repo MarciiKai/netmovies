@@ -35,6 +35,9 @@ function Header() {
               <li>Extensive library with over 400,000 videos</li>
             </ul>
             </div>
+            <div className="site">
+            <button type="button" >Go to NetMovies</button>
+            </div>
 
             <div className="last-footer-text">
             If you're seeking a secure platform for online movie watching, give NetMovies a try. Enjoy our service? Bookmark and share with your friends.

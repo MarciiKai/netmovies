@@ -130,11 +130,9 @@ justify-content: space-around;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: radial-gradient(
-      ellipse at center,
-      rgba(182, 47, 47, 0.6) 0%,
-      rgba(95, 42, 42, 0.6) 100%
-    );    background-size: cover;
+    background-color: rgba(182, 47, 47, 0.3);
+    /* background-image: url('./images/banner2.jpg'); */
+    background-size: cover;
   }
 
   .footer-text .footer-lead-in{
@@ -165,6 +163,19 @@ justify-content: space-around;
   margin-top: 30px;
   font-weight: 600;
   font-style: italic;
+}
+.site{
+  margin-top: 40px;
+}
+
+.site button{
+  background-color: #a9cef5;
+  color: #ffffff;
+  width: 30%;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 30px;
+  padding: 10px 20px;
 }
   
   

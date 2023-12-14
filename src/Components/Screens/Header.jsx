@@ -3,10 +3,10 @@ import { useNavigate } from 'react-router-dom';
 
 function Header() {
 
-  const [activePage ,setActivePage] = useState("/")
+  const [activePage ,setActivePage] = useState("./")
 const navigate = useNavigate();
 const handleClick = () =>{
-  setActivePage("/");
+  setActivePage("./");
   navigate("/Movies");
 };
   return (
@@ -26,7 +26,7 @@ const handleClick = () =>{
         </div>
         <div className="full-site">
           <button onClick={handleClick} type="button" > View Full Site ...</button>
-          {activePage === "/Movies" && <>Movies</>}
+          {activePage === "/Movies" && <div>Show something for Movies page</div>}
         </div>
         </div>
     </header>

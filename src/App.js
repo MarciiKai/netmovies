@@ -21,9 +21,9 @@ function App(){
     <Routes>
       <Route path ='/' element = {<Home/>} />
       <Route path ='/Movies' element ={<Movies/>} />
-      <Route path ='/TvShows' element = {<TvShows/>} />
-      <Route path ='/Animations' element = {<Animations/>} />
-      <Route path ='/About' element= {<About/>} />
+      <Route path ='./TvShows' element = {<TvShows/>} />
+      <Route path ='./Animations' element = {<Animations/>} />
+      <Route path ='./About' element= {<About/>} />
 
     </Routes>
     </>

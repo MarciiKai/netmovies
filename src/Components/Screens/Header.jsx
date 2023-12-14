@@ -1,14 +1,14 @@
 import React, {useState} from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const [activePage ,setActivePage] = useState("/")
+function Header() {
+
+  const [activePage ,setActivePage] = useState("/")
 const navigate = useNavigate();
 const handleClick = () =>{
   setActivePage("/");
   navigate("/Movies");
 };
-
-function Header() {
   return (
     <header id="main">
       <div className="header-container">

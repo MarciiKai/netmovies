@@ -45,9 +45,9 @@ justify-content: space-around;
     position: absolute;
     content: "";
     background: rgb(98, 80, 22);
-    background: -moz-radial-gradient(center, ellipse cover, rgba(182, 47, 47, 1.0) 0%, (95, 42, 42, 0.6) 100%);
-    background: -webkit-radial-gradient(center, ellipse cover, rgba(182, 47, 47, 1.0)0%,  (95, 42, 42, 0.6) 100%);
-    background: radial-gradient(ellipse at center, rgba(182, 47, 47, 0.6) 0%, rgba(95, 42, 42, 0.6) 100%);
+    background: -moz-radial-gradient(center, ellipse cover, rgb(105, 104, 104) 0%, (95, 42, 42, 0.6) 100%);
+    background: -webkit-radial-gradient(center, ellipse cover, rgb(122, 118, 118)0%,  (95, 42, 42, 0.6) 100%);
+    background: radial-gradient(ellipse at center, rgba(95, 91, 91, 0.6) 0%, rgba(99, 133, 136, 0.6) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#61b50808', endColorstr='#99000000', GradientType=1);
     top: 0;
     left: 0;
@@ -65,14 +65,15 @@ justify-content: space-around;
     top: 100px;
     height: 100%;
     padding: 50px; 
-    background-color: rgba(182, 47, 47, 0.3);
+    background-color: rgba(111, 46, 231, 0.3);
     color: #ffffff; 
   }
   
   .intro-text .intro-lead-in {
     max-width: 600px; 
-    font-size: xx-large;
+    font-size: 40px;
     font-weight: bold;
+    align-items: center;
     font-style: italic;
   }
   .intro-text .intro-heading{

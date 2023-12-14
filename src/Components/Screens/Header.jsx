@@ -1,4 +1,12 @@
-import React from 'react';
+import React, {useState} from 'react';
+import { useNavigate } from 'react-router-dom';
+
+const [activePage ,setActivePage] = useState("/")
+const navigate = useNavigate();
+const handleClick = () =>{
+  setActivePage("/");
+  navigate("/Movies");
+};
 
 function Header() {
   return (
@@ -17,7 +25,8 @@ function Header() {
           <button type="button">Search</button>
         </div>
         <div className="full-site">
-          <button type="button" > View Full Site ...</button>
+          <button onClick={handleClick} type="button" > View Full Site ...</button>
+          {activePage === "/Movies" && <>Movies</>}
         </div>
         </div>
     </header>

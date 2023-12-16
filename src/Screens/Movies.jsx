@@ -1,4 +1,4 @@
-import React, {useEffect, useContexy} from 'react';
+import React, {useEffect, useContext} from 'react';
 import contextPage from '../Components/ContextPage';
 import movieCard from '../Components/MovieCard';
 import {motion, AnimatePresence } from 'framer-motion';

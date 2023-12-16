@@ -5,5 +5,6 @@ import {motion} from 'framer-motion';
 import contextPage from './ContextPage';
 
 function movieCard({ movie }){
-  
+
 }
+export default movieCard();

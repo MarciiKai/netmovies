@@ -1,8 +1,8 @@
 import React, {useEffect, useContexy} from 'react';
-import contextPage from '../ContextPage';
-import movieCard from './MovieCard';
+import contextPage from '../Components/ContextPage';
+import movieCard from '../Components/MovieCard';
 import {motion, AnimatePresence } from 'framer-motion';
-import Genre from './Genre';
+import Genre from '../Components/Genre';
 import Header from './Header';
 import InfiniteScroll from 'react-infinite-scroll-component';
 

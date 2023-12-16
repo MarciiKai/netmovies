@@ -1,34 +1,28 @@
-import React from 'react';
+import React, {useEffect, useContexy} from 'react';
+import contextPage from '../ContextPage';
+import movieCard from './MovieCard';
+import {motion, AnimatePresence } from 'framer-motion';
+import Genre from './Genre';
+import Header from './Header'
 
-class Movies extends React.Component {
-  state = {
-    selectedMovie: null,
-  };
 
-  render() {
-    const { movies } = this.props;
+function Movies(){
+    const { movies, filterGenre,loader,activegenre, page, setPage, setMovies } = useContext(contextPage);
 
-    // Check if movies is not defined or not an array
-    if (!movies || !Array.isArray(movies)) {
-      return <p>No movies available.</p>;
-    }
+    useEffect(() =>{
+        setPage(1)
+    },
+    []);
 
-    return (
-      <div>
-        <h1>Movies</h1>
-        <ul>
-          {movies.map((movie) => (
-            <li key={movie.title} onClick={() => this.setState({ selectedMovie: movie })}>
-              {movie.title} ({movie.year})
-            </li>
-          ))}
-        </ul>
-        {this.state.selectedMovie && (
-          <p>Selected movie: {this.state.selectedMovie.title}</p>
-        )}
-      </div>
-    );
-  }
+    useEffect(() => {
+      setMovies([])
+      setPage(0)
+    }, [activegenre]);
+
+    useEffect(() =>{
+      if(page > 0){
+        filterGenre();
+      }
+    })
 }
-
 export default Movies;

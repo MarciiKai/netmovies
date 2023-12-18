@@ -1,6 +1,6 @@
 import React, { useEffect, useContext } from 'react'
 import contextPage from './ContextPage'
-import {Helmet} from "react-helmet"
+import {Helmet} from "react-helmet-async"
 
 function Genre(){
     const {fetchGenre, activegenre,setActiveGenre, genres, setMovies, page, setPage, filteredGenre } = useContext(contextPage);
@@ -21,8 +21,8 @@ function Genre(){
                     <button
                     onClick={() => setActiveGenre(genre.id)}
                     className={activegenre === genre.id } key ={genre.id}
-                    {genre.name}
                     >
+                       {genre.name}
                     </button>
                 ))
             }

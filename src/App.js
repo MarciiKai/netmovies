@@ -8,6 +8,7 @@ import About from "./Screens/About";
 import Animations from "./Screens/Animations";
 import Header from "./Screens/Header";
 import NetMoviesNavbar from "./Components/Navbar";
+import { MovieProvider } from './Components/ContextPage';
 
 function App(){
 
@@ -16,14 +17,15 @@ function App(){
      <NetMoviesNavbar/>
      <Header/>
 
-    <Routes>
-      <Route path ='/' element = {<Home/>} />
-      <Route path ='/Movies' element ={<Movies/>} />
-      <Route path ='./TvShows' element = {<TvShows/>} />
-      <Route path ='./Animations' element = {<Animations/>} />
-      <Route path ='./About' element= {<About/>} />
-
-    </Routes>
+     <MovieProvider>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/Movies" element={<Movies />} />
+          <Route path="/TvShows" element={<TvShows />} />
+          <Route path="/Animations" element={<Animations />} />
+          <Route path="/About" element={<About />} />
+        </Routes>
+      </MovieProvider>
     </>
    
     

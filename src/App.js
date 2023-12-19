@@ -10,6 +10,7 @@ import Header from "./Screens/Header";
 import NetMoviesNavbar from "./Components/Navbar";
 import { MovieProvider } from './Components/ContextPage';
 
+
 function App(){
 
   return(

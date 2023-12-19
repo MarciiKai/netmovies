@@ -16,7 +16,7 @@ export function MovieProvider({children}){
   const [loader, setLoader] = useState(true);
   const navigate = useNavigate();
 
-  const APIKEY = import.meta.env.VITE_API_KEY;
+  const APIKEY = process.env.VITE_API_KEY;
 
   useEffect(() => {
     if (page < 1){
@@ -94,7 +94,6 @@ export function MovieProvider({children}){
           fetchTrending,
           trending,
           fetchSearch,
-          setSearchedMovies,
           searchedMovies,
           setMovies,
           movies,

@@ -1,6 +1,6 @@
 import React, {useEffect, useContext} from 'react';
 import ContextPage from '../Components/ContextPage';
-import movieCard from '../Components/MovieCard';
+import Moviecard from '../Components/MovieCard';
 import {motion, AnimatePresence } from 'framer-motion';
 import Genre from '../Components/Genre';
 import Header from './Header';
@@ -8,7 +8,7 @@ import InfiniteScroll from 'react-infinite-scroll-component';
 
 
 function Movies(){
-    const { movies, filterGenre,loader,activegenre, page, totalPage, setPage, setMovies } = useContext(ContextPage);
+    const { movies, filteredGenre,loader,activegenre, page, totalPage, setPage, setMovies } = useContext(ContextPage);
 
     useEffect(() =>{
         setPage(1)
@@ -22,7 +22,7 @@ function Movies(){
 
     useEffect(() =>{
       if(page > 0){
-        filterGenre();
+        filteredGenre();
       }
     }, [page])
 
@@ -47,8 +47,8 @@ function Movies(){
                >
 
                 {movies.map((movie) => (
-                  <movieCard key ={movie.id} movie={movie}/>
-                ) )}
+               <Moviecard key={movie.id} movie={movie} />
+                                        ) )}
               </InfiniteScroll>
               </>
             }
